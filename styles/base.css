@@ -1,0 +1,116 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#course-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  color: #f6b93b;
+}
+
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f6b93b;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem 2rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  background: #0a3d62;
+  color: white;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-content img {
+  max-width: 150px;
+  border: 1px solid #ccc;
+}
+
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.location img {
+  max-width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+#lastModified {
+  color: #f6b93b;
+}

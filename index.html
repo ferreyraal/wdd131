@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="WDD 131 - Dynamic Web Fundamentals" content="Home Page">
+    <meta name="author" content="Alejandro Ferreyra">
+    <link rel="stylesheet" href="styles/base.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals - Alejandro Ferreyra</title>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    </header>
+
+    <nav>
+            <a href="https://www.linkedin.com/in/af-ferreyra/?skipRedirect=true" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=eng&id=p20#p20" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+    </nav>
+
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>
+                    My name is Alejandro Ferreyra. I was born in Buenos Aires, Argentina. 
+                    I still live there. It's a beautiful country with great people. I like basketball and soccer.
+                    My favorite thing to do is spend time with family and friends.
+                </p>
+                <img src="images/pictureofme.jpeg" alt="A photo of me">
+            </div>
+
+            <h3>My Country / City</h3>
+            <div class="location">
+                <img src="images/flag.png" alt="Flag of my country">
+                <p>
+                    Argentina is a large South American country known for its varied landscapes, from the Andes mountains to the Pampas
+                    grasslands and glaciers, and is famous for its Tango, soccer, and beef.
+                </p>
+            </div>
+        </section>  
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year"></span> ✅ Alejandro Ferreyra ✅ Argentina</p>
+        <p>Última actualización: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
