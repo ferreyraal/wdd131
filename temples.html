@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +12,23 @@
     <link rel="stylesheet" href="styles/temples-large.css">
     <title>WDD 131 - Dynamic Web Fundamentals - Temples</title>
 </head>
+
 <body>
     <header>
-        <h2>Temple Album</h2>
+        <h1>Temple album</h1>
+        <button type="button" id="menu"></button>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Temple Album</h1>
+        <h2>Home</h2>
         <div class="image-grid">
             <figure>
                 <img src="images/ba-temple.jpg" alt="Buenos Aires Temple" />
@@ -80,4 +83,5 @@
     <script src="scripts/temples.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
+
 </html>
