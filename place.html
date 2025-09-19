@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Fabian Ferreyra">
+    <meta name="description"
+        content="A responsive webpage  built for WDD 131 Dynamic Web Fundamentals. Includes information of Argentina">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Argentina a place to visit</title>
+</head>
+
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/argentina-small.webp" media="(max-width: 600px)">
+                <source srcset="images/argentina-medium.webp" media="(max-width: 1024px)">
+                <img src="images/argentina-large.webp" alt="Lemurs in Madagascar">
+            </picture>
+            <section class="data card">
+                <h2 class="card-title">
+                    Data
+                </h2>
+                <ul>
+                    <li><strong>Area:</strong> 587,041 sq km</li>
+                    <li><strong>Population:</strong> 27,691,018</li>
+                    <li><strong>Capital:</strong> Buenos Aires</li>
+                    <li><strong>Languages:</strong> Spanish</li>
+                    <li><strong>Currency:</strong> Peso</li>
+                    <li><strong>Time Zone:</strong> UTC-3</li>
+                    <li><strong>Calling Code:</strong> +54</li>
+                    <li><strong>Internet TLD:</strong> .ar</li>
+                </ul>
+            </section>
+            
+            <section class="weather card">
+                <h2 class="card-title">
+                    Weather
+                    <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+                </h2>
+                <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> ✅ Alejandro Ferreyra ✅ Argentina</p>
+        <p>Última actualización: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+
+</body>
+</html>
