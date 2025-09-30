@@ -96,7 +96,8 @@ const temples = [
         dedicated: "1986, January, 17-19",
         area: 30659,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    
     },
 
 
@@ -106,31 +107,61 @@ const temples = [
 
 createTempleCard();
 
-function createTempleCard() {
-    temples.forEach(temple => {
+function createTempleCard(filteredTemples = temples) {
+    const container = document.querySelector(".image-grid");
+    container.innerHTML = ""; 
+
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");
         let area = document.createElement("p");
         let img = document.createElement("img");
-    
+
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location</span> ${temple.location}`;
         dedication.innerHTML = `<span class="label">Dedication</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Area</span> ${temple.area}`;
-        img.setAttribute( "src", temple.imageUrl );
-        img.setAttribute( "alt", `${temple.templeName} Temple` );
-        img.setAttribute( "loading", "lazy" );
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy");
 
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(area);
         card.appendChild(img);
-    
-        document.querySelector(".image-grid").appendChild(card);  
-    
+
+        container.appendChild(card);
     });
-    
 }
+
+const homelink = document.querySelector("#home");
+homelink.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    createTempleCard(); 
+})
+
+
+const oldlink = document.querySelector("#old");
+oldlink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated) < 1900))
+})
+
+
+const newlink = document.querySelector("#new");
+newlink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated) > 1901))
+})
+
+
+const largelink = document.querySelector("#large");
+largelink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.area) > 50000))
+})
+
+const smalllink = document.querySelector("#small");
+smalllink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.area) < 50000))
+})
