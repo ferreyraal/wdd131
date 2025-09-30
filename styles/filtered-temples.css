@@ -27,7 +27,6 @@ header h1 {
 nav {
     width: 100%;
     margin: 0;
-    /* sacamos centrado */
     padding: 0;
 }
 
@@ -58,7 +57,6 @@ nav {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* menú ocupa todo */
 }
 
 .navigation a {
@@ -79,7 +77,6 @@ nav {
     display: block;
 }
 
-/* Main */
 main {
     max-width: 100%;
     margin: 1rem auto;
@@ -93,7 +90,6 @@ main h2 {
     margin-bottom: 1rem;
 }
 
-/* Image Grid - Cards */
 .image-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -123,7 +119,6 @@ main h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
 footer {
     background-color: #3f0071;
     color: white;
