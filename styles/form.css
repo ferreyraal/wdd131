@@ -90,10 +90,12 @@ input[type="submit"]:hover {
 }
 
 footer {
+    background-color: #3f0071;
+    color: white;
     text-align: center;
     padding: 1rem;
-    color: #777;
     font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
 @media (max-width: 600px) {
