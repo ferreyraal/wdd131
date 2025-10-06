@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Fabian Ferreyra">
+    <meta name="description"
+        content="EYRA SRL provides integrated logistics services for industrial and e-commerce businesses in Argentina. We offer warehousing, order fulfillment, and reliable transportation solutions.">
+    <meta name="keywords"
+        content="logistics, warehousing, order fulfillment, distribution, freight, transportation, e-commerce logistics, Argentina logistics company">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>EYRA Logistics | Integrated Warehousing & Distribution Solutions</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logoeyra.png" alt="Logo EYRA" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="type">How can I help you?:</label>
+            <select id="type">
+                <option value="general">General</option>
+                <option value="services">Services</option>
+                <option value="support">Support</option>
+            </select>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Submit your request</button>
+        </form>
+
+        <div id="formResult"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EYRA SRL. All rights reserved.</p>
+        <p>Address: Camino Gral Belgrano 2916, Avellaneda, Argentina</p>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>

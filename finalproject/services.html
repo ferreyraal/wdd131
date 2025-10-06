@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Fabian Ferreyra">
+    <meta name="description"
+        content="EYRA SRL provides integrated logistics services for industrial and e-commerce businesses in Argentina. We offer warehousing, order fulfillment, and reliable transportation solutions.">
+    <meta name="keywords"
+        content="logistics, warehousing, order fulfillment, distribution, freight, transportation, e-commerce logistics, Argentina logistics company">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>EYRA Logistics | Integrated Warehousing & Distribution Solutions</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logoeyra.png" alt="Logo EYRA" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header-section">
+            <h1>The following services are offered</h1>
+            <div class="filters">
+                <button onclick="filterServices('all')">All</button>
+                <button onclick="filterServices('industrial')">Industrial</button>
+                <button onclick="filterServices('ecommerce')">E-commerce</button>
+                <button onclick="filterServices('transport')">Transport</button>
+            </div>
+        </div>
+        <div id="servicesContainer" class="service-grid">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EYRA SRL. All rights reserved.</p>
+        <p>Address: Camino Gral Belgrano 2916, Avellaneda, Argentina</p>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>
